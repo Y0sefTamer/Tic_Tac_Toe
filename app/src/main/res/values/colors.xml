@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#232c46</color>
+    <color name="text_tic_tac_toe">#8a9dce</color>
+    <color name="otherbuttons">#3d4c68</color>
+    <color name="aboutbutton">#98aad8</color>
+    <color name="line_color">#A6FFFFFF</color>
+    <color name="home">#FAF8F8</color>
+</resources>

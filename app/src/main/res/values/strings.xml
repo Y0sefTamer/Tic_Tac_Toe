@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Tic Tac Toe</string>
+    <string name="tic_tac_toe" translatable="false">Tic-Tac-Toe</string>
+    <string name="play_solo">Play Solo</string>
+    <string name="play_with_a_friend">Play with a friend</string>
+    <string name="game_rules">Game Rules</string>
+    <string name="win">Win</string>
+    <string name="get_3_marks_in_a_row_nplayer_wins_game_ends">Get 3 marks in a row,\nPlayer wins.game ends.</string>
+    <string name="defeat">defeat</string>
+    <string name="opponent_gets_3_in_a_row_nplayer_loses_game_ends">Opponent gets 3 in a row,\nplayer loses,game ends.</string>
+    <string name="board_full_no_3_in_araw_nno_winner_game_ends">Board full,no 3 in a row,\nNo winner.game ends</string>
+    <string name="draw">draw</string>
+    <string name="enter_player_names">Enter Player Names</string>
+    <string name="enter_player_name">Enter Player Name</string>
+    <string name="start_game">Start Game</string>
+    <string name="enter_your_name">Enter Player Name</string>
+    <string name="reset_game">Reset Game</string>
+</resources>

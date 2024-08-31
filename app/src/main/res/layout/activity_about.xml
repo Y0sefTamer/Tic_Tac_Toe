@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        tools:context=".AboutActivity">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <TextView
+            android:id="@+id/game_rules_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/angkor"
+            android:text="@string/game_rules"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.185" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---------"
+            android:textColor="@color/line_color"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/game_rules_text"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <ImageView
+            android:id="@+id/win_rule"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/win"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/text_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/angkor"
+            android:text="@string/win"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.221"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/game_rules_text"
+            app:layout_constraintVertical_bias="0.14" />
+
+        <TextView
+            android:id="@+id/dic_win_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/get_3_marks_in_a_row_nplayer_wins_game_ends"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.393"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/text_win" />
+
+        <ImageView
+            android:id="@+id/win_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="244dp"
+            android:src="@drawable/winicon2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/dic_win_text"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="------------------------"
+            android:textColor="@color/line_color"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/dic_win_text" />
+
+        <ImageView
+            android:id="@+id/lose_rule"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/lose"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+        <TextView
+            android:id="@+id/text_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/angkor"
+            android:text="@string/defeat"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dic_lose_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opponent_gets_3_in_a_row_nplayer_loses_game_ends"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toEndOf="@+id/lose_rule"
+            app:layout_constraintTop_toBottomOf="@+id/text_lose" />
+
+        <ImageView
+            android:id="@+id/lose_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/loseicon2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/dic_lose_text"
+            app:layout_constraintTop_toBottomOf="@+id/win_icon" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="------------------------"
+            android:textColor="@color/line_color"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/dic_lose_text" />
+
+        <ImageView
+            android:id="@+id/draw_rule"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/draw"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+        <TextView
+            android:id="@+id/text_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/angkor"
+            android:text="@string/draw"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/line3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dic_draw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/board_full_no_3_in_araw_nno_winner_game_ends"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toEndOf="@+id/draw_rule"
+            app:layout_constraintTop_toBottomOf="@+id/text_draw" />
+
+        <ImageView
+            android:id="@+id/draw_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/drawicon2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/dic_draw_text"
+            app:layout_constraintTop_toBottomOf="@+id/lose_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
